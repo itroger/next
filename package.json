@@ -1,4 +1,7 @@
 {
+  "name": "idea-next",
+  "description": "IDEA Example: Next.js",
+  "keywords": ["react", "next"],
   "scripts": {
     "dev": "next"
   },

@@ -15,13 +15,17 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async context => {
-  const { params } = context
+  const { id } = context.params
+
+  const data = await fetch(`${host}/api/api-routes`)
+    .then(res => res.json())
+    .catch(err => {
+      console.error(err)
+      return Promise.resolve(null)
+    })
 
   return {
-    props: {
-      id: params.id,
-      data: await fetch(`${host}/api/api-routes`).then(res => res.json())
-    },
+    props: { id, data },
     revalidate: 10
   }
 }

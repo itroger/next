@@ -2,10 +2,15 @@ import { GetStaticProps } from 'next'
 import host from '../site.config'
 
 export const getStaticProps: GetStaticProps = async () => {
+  const data = await fetch(`${host}/api/api-routes`)
+    .then(res => res.json())
+    .catch(err => {
+      console.error(err)
+      return Promise.resolve(null)
+    })
+
   return {
-    props: {
-      data: await fetch(`${host}/api/api-routes`).then(res => res.json())
-    }
+    props: { data }
   }
 }
 

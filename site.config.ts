@@ -1,6 +1,6 @@
 const host =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : 'http://localhost:80'
+    : 'https://next.itroger.design'
 
 export default host

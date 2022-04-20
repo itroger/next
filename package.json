@@ -1,9 +1,15 @@
 {
   "name": "idea-next",
   "description": "IDEA Example: Next.js",
-  "keywords": ["react", "next"],
+  "keywords": [
+    "react",
+    "next"
+  ],
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "^12.1.5",
@@ -14,6 +20,8 @@
   "devDependencies": {
     "@types/node": "^17.0.25",
     "@types/react": "^18.0.5",
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5",
     "prettier": "^2.6.2",
     "typescript": "^4.6.3"
   }

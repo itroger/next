@@ -10,7 +10,7 @@ const Index = () => {
 
   return (
     <div>
-      <h1>IDEA - Examples: Next</h1>
+      <h1>IDEA - Examples: Next.js</h1>
       <p>可用于生产的 React 框架，Next.js 提供生产所需的所有特性：</p>
       <ul>
         <li>混合多种静态和服务端渲染</li>

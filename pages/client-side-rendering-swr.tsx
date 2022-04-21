@@ -4,7 +4,7 @@ const ClientSideRenderingSwr = () => {
   // @ts-ignore
   const fetcher = (...args) => fetch(...args).then(res => res.json())
 
-  const { data } = useSWR('/1api/api-routes', fetcher)
+  const { data } = useSWR('/api/api-routes', fetcher)
 
   return (
     <div>

@@ -10,15 +10,9 @@ const Index = () => {
 
   return (
     <div>
-      <h1>IDEA - Examples: Next.js</h1>
-      <p>可用于生产的 React 框架，Next.js 提供生产所需的所有特性：</p>
-      <ul>
-        <li>混合多种静态和服务端渲染</li>
-        <li>TypeScript</li>
-        <li>内置路由</li>
-        <li>零配置</li>
-      </ul>
-      <h3>页面与路由</h3>
+      <h1>Examples: Next.js</h1>
+      <h3>The React Framework for Production.</h3>
+      <h3>页面渲染</h3>
       <ul>
         <li>
           <Link href="/static-generation-without-data">静态生成-无数据</Link>
@@ -38,6 +32,9 @@ const Index = () => {
         <li>
           <Link href="/dynamic-routes/123">动态路由</Link>
         </li>
+      </ul>
+      <h3>API 路由</h3>
+      <ul>
         <li>API 路由: {apiRes.data?.method}</li>
         <li>动态 API 路由: {dynamicApiRes.data?.id}</li>
       </ul>
